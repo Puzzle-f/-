@@ -1,0 +1,14 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<GridPane  fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="100" vgap="100">
+    <TextArea prefWidth="780" prefHeight="580" wrapText="true" GridPane.vgrow="ALWAYS" fx:id="textArea"/>
+    <Button GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" text="   Generate   " alignment="CENTER_RIGHT" onAction="#generate" fx:id="button"
+    />
+    <TextArea prefWidth="780" prefHeight="580" wrapText="true" GridPane.vgrow="ALWAYS" fx:id="textAreaDaemon" visible="false" managed="false"/>
+
+</GridPane>
